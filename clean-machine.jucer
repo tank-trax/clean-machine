@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="PorBJw" name="clean-machine" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyEmail="brian@amalgamatedsignals.com" companyName="amalgamatedsignals"
+              companyWebsite="https://amalgamatedsignals.com/" pluginFormats="buildLV2,buildStandalone,buildVST,buildVST3"
+              lv2Uri="https://amalgamatedsignals.com/" defines="JUCE_DISPLAY_SPLASH_SCREEN=0&#10;JUCE_REPORT_APP_USAGE=0&#10;LINUX=1&#10;JUCE_MODAL_LOOPS_PERMITTED=1">
+  <MAINGROUP id="QXSOSz" name="clean-machine">
+    <GROUP id="{173A9919-FC8A-0CB8-2D61-6F454BE9964E}" name="Data">
+      <FILE id="vgC75N" name="heart.svg" compile="0" resource="1" file="Data/heart.svg"/>
+      <FILE id="JefcvV" name="IBMPlexMono-License.txt" compile="0" resource="1"
+            file="Data/IBMPlexMono-License.txt"/>
+      <FILE id="Guaqz4" name="IBMPlexMono.ttf" compile="0" resource="1" file="Data/IBMPlexMono.ttf"/>
+      <FILE id="DDvlpe" name="Karla-License.txt" compile="0" resource="1"
+            file="Data/Karla-License.txt"/>
+      <FILE id="yKGTru" name="Karla.ttf" compile="0" resource="1" file="Data/Karla.ttf"/>
+    </GROUP>
+    <GROUP id="{2D9DFE48-F616-0C29-191B-AAEB7745FF6D}" name="Source">
+      <FILE id="eYr1ea" name="Compressor.cpp" compile="1" resource="0" file="Source/Compressor.cpp"/>
+      <FILE id="WJk0g1" name="Compressor.h" compile="0" resource="0" file="Source/Compressor.h"/>
+      <FILE id="HXKOpN" name="Editor.cpp" compile="1" resource="0" file="Source/Editor.cpp"/>
+      <FILE id="mrDfY5" name="Editor.h" compile="0" resource="0" file="Source/Editor.h"/>
+      <FILE id="cUM4hZ" name="Fonts.cpp" compile="1" resource="0" file="Source/Fonts.cpp"/>
+      <FILE id="sS2evS" name="Fonts.h" compile="0" resource="0" file="Source/Fonts.h"/>
+      <FILE id="jjNtzN" name="Heart.cpp" compile="1" resource="0" file="Source/Heart.cpp"/>
+      <FILE id="Z8UIMl" name="Heart.h" compile="0" resource="0" file="Source/Heart.h"/>
+      <FILE id="LCHF4C" name="LookAndFeel.cpp" compile="1" resource="0" file="Source/LookAndFeel.cpp"/>
+      <FILE id="YsiJih" name="LookAndFeel.h" compile="0" resource="0" file="Source/LookAndFeel.h"/>
+      <FILE id="NMaOAF" name="Meter.cpp" compile="1" resource="0" file="Source/Meter.cpp"/>
+      <FILE id="B9aBMy" name="Meter.h" compile="0" resource="0" file="Source/Meter.h"/>
+      <FILE id="atibw6" name="Parameters.cpp" compile="1" resource="0" file="Source/Parameters.cpp"/>
+      <FILE id="J3sOWg" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
+      <FILE id="YkYo83" name="Processor.cpp" compile="1" resource="0" file="Source/Processor.cpp"/>
+      <FILE id="taL5Kq" name="Processor.h" compile="0" resource="0" file="Source/Processor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
+               JUCE_JACK="1" JUCE_WEB_BROWSER="0" JUCE_USE_CURL="0"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraCompilerFlags="-fvisibility=hidden "
+                extraLinkerFlags="-fdata-sections -ffunction-sections -Wl,--gc-sections -Wl,-O1 -Wl,--as-needed -Wl,--strip-all -fPIC">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="clean-machine"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="clean-machine"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
